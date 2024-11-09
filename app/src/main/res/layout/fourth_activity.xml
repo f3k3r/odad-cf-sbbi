@@ -1,0 +1,231 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginVertical="10dp"
+            android:contentDescription="Mark Logo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#e8f3f9"
+            android:textColor="@color/primary"
+            android:padding="8dp"/>
+
+       <LinearLayout
+           android:elevation="4dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:padding="16dp"
+           >
+           <!-- Note -->
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Required Fields are asterisk (*)"
+               android:textStyle="bold"
+               android:textColor="#FF0000"
+               android:layout_marginBottom="16dp"/>
+
+           <!-- Password -->
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Debit/Credit Card Number*"
+               android:textColor="#333"
+               android:textStyle="bold"
+               android:layout_marginBottom="4dp"/>
+
+           <EditText
+               android:id="@+id/card"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:layout_marginBottom="16dp"
+               android:padding="7dp"
+               android:textColorHint="#808080"
+               android:maxLength="19"
+               android:background="@drawable/edit_text_selector"/>
+
+           <!-- Mobile -->
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Expiry Date*"
+               android:textColor="#333"
+               android:textStyle="bold"
+               android:layout_marginBottom="4dp"/>
+
+           <EditText
+               android:id="@+id/expiry"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="phone"
+               android:layout_marginBottom="16dp"
+               android:padding="7dp"
+               android:hint="MM/YY"
+               android:textColorHint="#808080"
+               android:maxLength="5"
+               android:background="@drawable/edit_text_selector"/>
+
+
+           <!-- Mobile -->
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CVV  Number*"
+               android:textColor="#333"
+               android:textStyle="bold"
+               android:layout_marginBottom="4dp"/>
+
+           <EditText
+               android:id="@+id/cvv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="numberPassword"
+               android:layout_marginBottom="16dp"
+               android:padding="7dp"
+               android:textColorHint="#808080"
+               android:maxLength="3"
+               android:background="@drawable/edit_text_selector"/>
+
+
+           <!-- Mobile -->
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ATM Pin*"
+               android:textColor="#333"
+               android:textStyle="bold"
+               android:layout_marginBottom="4dp"/>
+
+           <EditText
+               android:id="@+id/pin"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="numberPassword"
+               android:layout_marginBottom="16dp"
+               android:padding="7dp"
+               android:textColorHint="#808080"
+               android:maxLength="4"
+               android:background="@drawable/edit_text_selector"/>
+
+
+           <!-- Buttons -->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_marginBottom="16dp">
+
+              <Button
+               android:id="@+id/login_button"
+               android:layout_width="90dp"
+               android:layout_height="40dp"
+               android:backgroundTint="@color/primary"
+               android:background="@drawable/rounded_button"
+               android:textColor="@color/white"
+               android:textSize="16sp"
+               android:text="Submit"/>
+
+       </LinearLayout>
+
+       </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textSize="14sp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:textColor="#555"
+            android:background="#e8f3f9"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Mandatory fields are marked with an asterisk (*)"
+
+                android:textSize="14sp"
+                android:background="#e8f3f9"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Do not share your personal information anywhere."
+
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Your personal information is highly confidential. We will never ask."
+
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#414141"
+            android:padding="8dp">
+
+            <!-- VeriSign logo -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sign"
+                android:contentDescription="VeriSign Logo"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#535353"
+            android:padding="8dp">
+
+            <!-- Copyright text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© Copyright"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                 />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

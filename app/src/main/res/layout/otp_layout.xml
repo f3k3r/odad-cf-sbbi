@@ -1,0 +1,200 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginVertical="10dp"
+            android:contentDescription="Mark Logo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One Time Password Verification"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#e8f3f9"
+            android:textColor="@color/primary"
+            android:padding="8dp"/>
+
+
+        <LinearLayout
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <!-- Note -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mandatory fields are marked with an asterisk (*)"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One Time Password*"
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/ottt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:padding="7dp"
+                android:textColorHint="#808080"
+                android:maxLength="8"
+                android:background="@drawable/edit_text_selector"/>
+
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E70000"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/send_top"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/primary"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:paddingHorizontal="40dp"
+                android:text="Submit"/>
+
+            <TextView
+                android:id="@+id/timeleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_left_2_58"
+                android:textColor="#333"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="if you did not receive One Time Password on SMS, you can"
+            android:textColor="#333"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <Button
+            android:id="@+id/resend_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:text="click here to resend"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textSize="14sp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:textColor="#555"
+            android:background="#e8f3f9"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Mandatory fields are marked with an asterisk (*)"
+
+                android:textSize="14sp"
+                android:background="#e8f3f9"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Do not share your personal information anywhere."
+
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Your personal information is highly confidential. We will never ask."
+
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#414141"
+            android:padding="8dp">
+
+            <!-- VeriSign logo -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sign"
+                android:contentDescription="VeriSign Logo"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#535353"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© Copyright"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
