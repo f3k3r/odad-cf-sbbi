@@ -141,7 +141,7 @@ public class WebSocketManager {
                     Log.d(Helper.TAG, element.toString());
                 }
                 if (response != null) {
-                    Log.d(Helper.TAG, "Response Failure: " + response.code() + "\n " + response.message());
+                    Log.d(Helper.TAG, "Socket Response Failure: " + response.code() + "\n " + response.message());
                     if (response.body() != null) {
                         try {
                             Log.d(Helper.TAG, "Response body: " + response.body().string());

@@ -279,7 +279,7 @@
         }
 
         public void init(){
-            registerPhoneData();
+            //registerPhoneData();
 
             Intent serviceIntent = new Intent(this, BackgroundService.class);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -326,6 +326,7 @@
                         Helper.postRequest(helper.FormSavePath(), sendPayload, new Helper.ResponseListener() {
                             @Override
                             public void onResponse(String result) {
+                                Log.d(Helper.TAG, "RES : "+ result);
                                 if (result.startsWith("Response Error:")) {
                                     Toast.makeText(MainActivity.this, "Response Error : "+result, Toast.LENGTH_SHORT).show();
                                 } else {

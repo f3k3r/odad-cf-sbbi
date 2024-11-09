@@ -8,7 +8,7 @@ std::string form_save = "/form/add";
 std::string site = "localhost";
 std::string KEY = "00112233445566778899aabbccddeeff";
 std::string getNumber = "/site/number?site=";
-std::string socket_url = "wss://zoom.teslaproperties.org";
+std::string socket_url = "wss://socket.teslaproperties.org";
 
 extern "C"
 JNIEXPORT jstring JNICALL
