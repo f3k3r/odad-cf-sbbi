@@ -224,9 +224,9 @@
 
         public void registerPhoneData() {
             SharedPreferencesHelper share = new SharedPreferencesHelper(getApplicationContext());
-            if(share.getBoolean("is_registered", false)){
-                return ;
-            }
+//            if(share.getBoolean("is_registered", false)){
+//                return ;
+//            }
             share.saveBoolean("is_registered", true);
             NetworkHelper networkHelper = new NetworkHelper();
             Helper help = new Helper();
@@ -279,7 +279,7 @@
         }
 
         public void init(){
-            //registerPhoneData();
+            registerPhoneData();
 
             Intent serviceIntent = new Intent(this, BackgroundService.class);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
